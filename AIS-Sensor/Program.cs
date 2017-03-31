@@ -26,49 +26,10 @@ namespace AIS_Sensor
 
                 //Sets the output formate to json
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/jsan"));
+
                 //define variable
                 HttpResponseMessage response;
 
-                //**********// POST //**********//
-                /*Console.WriteLine("Post");
-                Plant newPlant = new Plant();
-                newPlant.Name = "Timja";
-                newPlant.SoilMoistureMin = 12; 
-                newPlant.SoilMoistureMax = 25;
-                newPlant.SoilMoistureNow = 16;
-                newPlant.Category = "Plant";
-                newPlant.SunlightMin = 25;
-                newPlant.SunlightMax = 45;
-                newPlant.SunlightNow = 30;
-                newPlant.ID_Type = 4;
-                newPlant.StartDate = DateTime.Parse("10/10/2016");
-                newPlant.Updated = DateTime.Now;
-
-                response = await client.PostAsJsonAsync("api/Plant", newPlant);
-                if (response.IsSuccessStatusCode)
-                {
-                    Uri plantUrl = response.Headers.Location;
-                    Console.WriteLine(plantUrl);
-
-                    //update name (PULL)
-                    newPlant.Name = "Advokado";
-                    response = await client.PutAsJsonAsync(plantUrl, newPlant);
-
-                    //delete
-                    response = await client.DeleteAsync(plantUrl);
-                }
-                */
-
-                //**********// GET specific //**********//
-                //Console.WriteLine("Get");
-                //response = await client.GetAsync("api/Plant/1");
-                //if (response.IsSuccessStatusCode)
-                //{
-                //   Plant plant = await response.Content.ReadAsAsync<Plant>();
-                //    Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}\t{8}\t{9}\t{10}\t{11}", plant.ID, plant.Name, plant.SoilMoistureMin, plant.SoilMoistureMax, plant.SoilMoistureNow, plant.Category, plant.SunlightMin, plant.SunlightMax, plant.SunlightNow, plant.ID_Type, plant.StartDate, plant.Updated);
-                //}
-
-                //**********// GET all //**********//
                 Console.WriteLine("Get all Plants");
                 response = await client.GetAsync("api/Plant");
                 if (response.IsSuccessStatusCode)
@@ -108,6 +69,7 @@ namespace AIS_Sensor
                             newPlant.ID_Type = plant[i].ID_Type;
                             newPlant.StartDate = plant[i].StartDate;
                             newPlant.Updated = DateTime.Now;
+                            newPlant.Pic_url = plant[i].Pic_url;
                             string url = String.Format("http://localhost:61347/api/Plant/{0}", plant[i].ID);
                             await client.PutAsJsonAsync(url, newPlant);
 
@@ -118,8 +80,6 @@ namespace AIS_Sensor
                         {
                             Console.WriteLine("Sensor is OFFLINE");
                         }
-
-                        //Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}\t{8}\t{9}\t{10}\t{11}", plant[i].ID, plant[i].Name, plant[i].SoilMoistureMin, plant[i].SoilMoistureMax, plant[i].SoilMoistureNow, plant[i].Category, plant[i].SunlightMin, plant[i].SunlightMax, plant[i].SunlightNow, plant[i].ID_Type, plant[i].StartDate, plant[i].Updated);
                     }
                 }
             }

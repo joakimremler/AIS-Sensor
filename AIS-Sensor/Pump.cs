@@ -20,8 +20,8 @@ namespace AIS_Sensor
 
         public void Start()
         {
-            //Pump water in 5s
-            Console.WriteLine("Start pumping water");
+            //Pump water for 5s
+            Console.WriteLine("Pumping water for 5s");
         }
 
     }

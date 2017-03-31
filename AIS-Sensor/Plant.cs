@@ -20,5 +20,6 @@ namespace AIS_Sensor
         public int ID_Type { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime Updated { get; set; }
+        public string Pic_url { get; set; }
     }
 }

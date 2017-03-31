@@ -10,7 +10,6 @@ namespace AIS_Sensor
     {
         public long ID { get; }
 
-
         public Sensor(long id)
         {
             this.ID = id;
