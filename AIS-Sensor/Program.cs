@@ -69,7 +69,7 @@ namespace AIS_Sensor
                             newPlant.ID_Type = plant[i].ID_Type;
                             newPlant.StartDate = plant[i].StartDate;
                             newPlant.Updated = DateTime.Now;
-                            newPlant.Pic_url = plant[i].Pic_url;
+                            newPlant.url = plant[i].url;
                             string url = String.Format("http://localhost:61347/api/Plant/{0}", plant[i].ID);
                             await client.PutAsJsonAsync(url, newPlant);
 
