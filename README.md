@@ -15,9 +15,8 @@ This is a beta and it is not right fully complete and it has not been tested on 
 Do to limited time I haven't been able to install a pump and a sensor.  
 
 ## TODO
-* Replace the simulation sensor to a real sensor that reads moisture in the soil and output the signal to AIS-Sensor.
-* Add a small electrical pump to the Raspberry pi gpio pinns and control the pump, a preferible duration is 5s.
-* Add protection
+* Add security to the webpage that nobody that hasent been autorized can POST, DELETE or PUT values to your system.
+* Add login
 * Add multiply users
 
 ## Languages
@@ -25,7 +24,7 @@ This project is written in C#
 
 ## Features
 * Easy to manages.
-* Outputs data.
+* Gets all data.
 * Connected to a REST API.
 * Updates API with sensor values.
 
@@ -40,19 +39,12 @@ This project is written in C#
 * Microsoft Visual Studio Professional 2017
 
 ## Installation (WRITE THIS!!!!!)
-1. Clone this repo and set folder Linkify to localhost or create a [Virtual directory](https://en.wikipedia.org/wiki/Virtual_directory)
-  `git clone git@github.com:joakimremler/Linkify.git`.
+1. Download repo: [AIS-Sensor](https://github.com/joakimremler/AIS-Sensor)
 
-2. Create a Database in Mysql called Linkify `CREATE DATABASE Linkify;`.
+2. Start AIS-API.
 
-3. Import `linkify.sql` MySql backup file. Navigate to assets/mysql and insert this line:
-
-    `mysql -u root -p Linkify < linkify.sql`
-
-4. Edit your settings in core/init.php.
-
-5. You're done, enjoy!
+3. You're done, enjoy!
 
 ## Resources
-Great tutorial on C# REST API Client:
-[API Client](https://www.youtube.com/watch?v=i1HSG7ttDtM)
+Tutorial on MVC projects and connections to API:
+[MVC Connect to API](https://www.youtube.com/watch?v=P8QtHXmCpCc)
