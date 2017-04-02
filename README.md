@@ -1,12 +1,12 @@
 # Automatic Irrigation System - Sensor (AIS-Sensor)
 
-#Description AIS
+## Description AIS
 Automatic Irrigation System is a automatic system that measure earth moisture with a sensor and decides if it need water or not.
 The system then register this data to a open rest API (AIS-API) and a WEB based system gets this data and output it on a webpage (AIS-WEB).
 
 The final goal with this project is that you can have a lots of fresh plants and flowers without have to spend time of to managing them.
 
-#Description AIS-Sensor (WRITE THIS!!!)
+## Description AIS-Sensor (WRITE THIS!!!)
 
 
 
