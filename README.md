@@ -21,26 +21,26 @@ Do to limited time I haven't been able to install a pump and a sensor.
 * Add protection
 * Add multiply users
 
-#Languages
+## Languages
 This project is written in C#
 
-#Features
+## Features
 * Easy to manages.
 * Outputs data.
 * Connected to a REST API.
 * Updates API with sensor values.
 
 
-#Tested software versions
+## Tested software versions
 * Mysql Workbench 6.3.8
 * Microsoft Visual Studio Professional 2017
 * Microsoft Visual Studio Community 2015
 
-#Recommended software versions
+## Recommended software versions
 * Mysql Workbench 6.3.8
 * Microsoft Visual Studio Professional 2017
 
-# Installation (WRITE THIS!!!!!)
+## Installation (WRITE THIS!!!!!)
 1. Clone this repo and set folder Linkify to localhost or create a [Virtual directory](https://en.wikipedia.org/wiki/Virtual_directory)
   `git clone git@github.com:joakimremler/Linkify.git`.
 
@@ -54,6 +54,6 @@ This project is written in C#
 
 5. You're done, enjoy!
 
-#Resources
+## Resources
 Great tutorial on C# REST API Client:
 [API Client](https://www.youtube.com/watch?v=i1HSG7ttDtM)
