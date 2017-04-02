@@ -39,11 +39,13 @@ This project is written in C#
 * Microsoft Visual Studio Professional 2017
 
 ## Installation (WRITE THIS!!!!!)
-1. Download repo: [AIS-Sensor](https://github.com/joakimremler/AIS-Sensor)
+1. Download and setup repo: [AIS-API](https://github.com/joakimremler/AIS-API)
 
-2. Start AIS-API.
+2. Download repo: [AIS-Sensor](https://github.com/joakimremler/AIS-Sensor)
 
-3. You're done, enjoy!
+3. Start AIS-API.
+
+4. You're done, enjoy!
 
 ## Resources
 Tutorial on MVC projects and connections to API:
