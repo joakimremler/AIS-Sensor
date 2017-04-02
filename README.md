@@ -15,8 +15,7 @@ This is a beta and it is not right fully complete and it has not been tested on 
 Do to limited time I haven't been able to install a pump and a sensor.  
 
 ## TODO
-* Add security to the webpage that nobody that hasent been autorized can POST, DELETE or PUT values to your system.
-* Add login
+* Add security to the application.
 * Add multiply users
 
 ## Languages
@@ -38,7 +37,7 @@ This project is written in C#
 * Mysql Workbench 6.3.8
 * Microsoft Visual Studio Professional 2017
 
-## Installation (WRITE THIS!!!!!)
+## Installation
 1. Download and setup repo: [AIS-API](https://github.com/joakimremler/AIS-API)
 
 2. Download repo: [AIS-Sensor](https://github.com/joakimremler/AIS-Sensor)
@@ -46,7 +45,3 @@ This project is written in C#
 3. Start AIS-API.
 
 4. You're done, enjoy!
-
-## Resources
-Tutorial on MVC projects and connections to API:
-[MVC Connect to API](https://www.youtube.com/watch?v=P8QtHXmCpCc)
