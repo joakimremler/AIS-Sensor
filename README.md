@@ -15,7 +15,7 @@ The final goal with this project is that you can have a lots of fresh plants and
 This is a beta and it is not right fully complete and it has not been tested on a Raspberry PI.
 Do to limited time I haven't been able to install a pump and a sensor.  
 
-#TODO
+## TODO
 * Replace the simulation sensor to a real sensor that reads moisture in the earth and output the signal to AIS-Sensor.
 * Add a small electrical pump to the Raspberry pi gpio pinns and control the pump, a preferible duration is 5s.
 * Add protection
